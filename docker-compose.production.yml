@@ -1,0 +1,10 @@
+version: "3"
+services:
+  backend:
+    container_name: ondc-seller
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    ports:
+      - 1174:8001
+    restart: always
